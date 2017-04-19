@@ -2398,7 +2398,9 @@ function addCard(id,statusLower,status,name,address,city,zip){
   //console.log(cards);
 }
 
-var map = L.map('mapid').setView([44.053489, -123.085817], 11);
+var map = L.map('mapid', {
+	scrollWheelZoom: false
+}).setView([44.053489, -123.085817], 11);
 
 	
 // Set up cards

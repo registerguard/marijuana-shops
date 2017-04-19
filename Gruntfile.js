@@ -121,7 +121,7 @@ module.exports = function(grunt){
 					expand: true,
 					cwd: 'dist',
 					src: '**/**',
-					dest: '/marijuana/'
+					dest: '/marijuana-shops/'
 				}
 			]
 		}
