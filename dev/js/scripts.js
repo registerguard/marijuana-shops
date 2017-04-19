@@ -2400,7 +2400,7 @@ function addCard(id,statusLower,status,name,address,city,zip){
 
 var map = L.map('mapid', {
 	scrollWheelZoom: false
-}).setView([44.053489, -123.085817], 11);
+}).setView([44.053610, -123.091205], 12);
 
 	
 // Set up cards
@@ -2413,9 +2413,9 @@ var osm = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var cartoc = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>';
 var osmc = 'Map data &copy; <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>';
 
-L.tileLayer(osm, {
+L.tileLayer(carto, {
 	maxZoom: 18,
-	attribution: osmc
+	attribution: cartoc
 }).addTo(map);
 
 omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0418.csv')
@@ -2488,9 +2488,25 @@ omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0418.csv')
 			});
 		});
 		
-		cardswrap.innerHTML = cards;
-		
 		//marker.bindPopup(mBName + '<br>' + mAddress);
 	});
+	
+	// Assign cards
+	cardswrap.innerHTML = cards;
+	
+	$('<div class="flexy-ad">' +
+		'<!-- //////////////////// Leaderboard Top \\\\\\\\\\\\\\\\\\\\ -->' +
+		'<div class="advert"><div id="leaderboard-top"><script>googletag.cmd.push(function() { googletag.display("leaderboard-top"); });</script></div></div>' +
+		'<!-- \\\\\\\\\\\\\\\\\\\\ Leaderboard Top //////////////////// -->' +
+	'</div>')
+		.insertAfter($('div#13'));
+	$('<div class="flexy-ad">' +
+		'<!-- //////////////////// Medium Rectangle 1 \\\\\\\\\\\\\\\\\\\\ -->' +
+		'<div class="advert"><div id="medium-rectangle-1"><script>googletag.cmd.push(function() { googletag.display("medium-rectangle-1"); });</script></div></div>' +
+		'<!-- \\\\\\\\\\\\\\\\\\\\ Medium Rectangle 1 //////////////////// -->' +
+	'</div>')
+		.insertAfter($('div#19'));
+	//$("#cardswrap:nth-child(12)").css("background","red");
+	
 })
 .addTo(map);
