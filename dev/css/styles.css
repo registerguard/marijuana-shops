@@ -656,21 +656,35 @@
       margin-left: -10px; } }
 
 .totop-button {
-  margin: 10px;
-  padding: 10px;
   position: fixed;
-  bottom: 0;
+  margin: 0;
+  top: 0;
   right: 0;
-  z-index: 100;
+  bottom: auto;
+  left: 0;
+  padding: 10px;
+  z-index: 999;
   display: none;
   color: #fff;
-  opacity: .8;
+  text-align: center;
   background-color: rgba(136, 136, 136, 0.8);
   transition: background-color .5s ease; }
   .totop-button:hover {
     cursor: pointer;
     background-color: #888888;
     transition: background-color .5s ease; }
+
+@media screen and (min-width: 600px) {
+  .totop-button {
+    margin: 10px;
+    padding: 10px;
+    top: unset;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    opacity: .8;
+    background-color: rgba(136, 136, 136, 0.8);
+    transition: background-color .5s ease; } }
 
 .headline {
   margin: 0 10px; }
