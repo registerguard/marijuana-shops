@@ -1,9 +1,11 @@
 <!doctype html>
 <head>
+	
 	<!-- @include head.html -->
 	
 </head>
 <body>
+	
 	<header id="zeppelin" role="banner" class="z_animated">
 		<h6><a href="http://registerguard.com">The Register-Guard</a></h6>
 		<p><a href="http://registerguard.com/rg/life/cannabisculture/">Cannabis Culture</a></p>
@@ -13,7 +15,7 @@
 	
 	<div id="wrapper">
 		
-		<header class="header">
+		<header class="headline">
 			<h1>Lane County marijuana shops</h1>
 			<div class="bydate">
 				<div class="byline">By <a href="mailto:rob.denton@registerguard.com">Rob Denton</a> | </span>The Register-Guard</div>
@@ -21,54 +23,17 @@
 			</div>
 		</header>
 		
-		<!-- @include cards.html -->
+		<div id="cards"></div>
 		
 		<p class="caption">Data from <a href="http://www.oregon.gov/OLCC/pages/index.aspx" target="_blank">Oregon Liquor Control Commission</a>, updated on April 4, 2017.</p>
 		
 	</div>
 	
-	<footer>
-		<div id="bd_press">
-			<p><span>The Register-Guard <span class="bat_break">•</span></span> <span><a href="http://g.co/maps/h6sgk">3500 Chad Drive</a> • Eugene, OR • 97408 <span class="bat_break">/</span></span> <span>(541) 485-1234 <span>/</span> <a href="mailto:feedback@registerguard.com">Feedback</a></span></p>
-			<p><span>Copyright © 2017 <span class="bat_break">/</span></span> <span><a href="http://projects.registerguard.com/pages/terms-of-use/">Terms</a> <span>/</span> <a href="http://projects.registerguard.com/pages/privacy-statement/">Privacy</a> <span>/</span> <a href="http://projects.registerguard.com/pages/copyright/">Copyright</a></span></p>
-		</div>
-	</footer>
-
+	<!-- @include footer.html -->
 	
-	<div class="elevator-button head">Back to top<div>
+	<div class="totop-button head">Back to top<div>
 	
-	<script>if(!window.jQuery){document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>');}</script>
-	
-	<!-- @if NODE_ENV='development' -->
-	<script src="js/scripts.js"></script>
-	<!-- @endif -->
-
-	<!-- @if NODE_ENV='production' -->
-	<script src="js/scripts.min.js"></script>
-	<!-- @endif -->
-	
-	<script>
-		
-		$(window).scroll(function() {
-			if ($(window).scrollTop() > 100) {
-				$(".elevator-button").fadeIn("slow");
-			} else {
-				$(".elevator-button").fadeOut("fast");
-			}
-		});
-		
-		$('.elevator-button').click(function(){
-			$('html,body').animate({
-				scrollTop: $('#mapid').offset().top - 40
-			}, 2000, function(){
-				$('.flexy-item').css("background","none");
-			});
-		});
-	</script>
-	
-	<!-- [BEGIN] Analytics -->
-	<script>(function(r,g,n,e,w,s){r.GoogleAnalyticsObject=e;r[e]||(r[e]=function(){(r[e].q=r[e].q||[]).push(arguments)});r[e].l=+new Date;w=g.createElement(n);s=g.getElementsByTagName(n)[0];w.async=1;w.src='//www.google-analytics.com/analytics.js';s.parentNode.insertBefore(w,s)}(window,document,'script','ga'));ga('create','UA-882065-1','registerguard.com');ga('require','displayfeatures');ga('require','linkid','linkid.js');ga('send','pageview',{'dimension1':'Rob Denton','dimension2':'potshops','dimension3':'Apr 19, 2017 9:00AM','dimension4':'http://cloud.registerguard.com/marijuana/','dimension5':'Explore the growing number of active and proposed marijuana shops in Lane County'});</script>
-	<!-- [END] Analytics -->
+	<!-- @include scripts.html -->
 	
 </body>
 </html>

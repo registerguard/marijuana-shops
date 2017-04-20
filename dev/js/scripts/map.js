@@ -5,9 +5,9 @@ var map = L.map('mapid', {
 	
 // Set up cards
 var cards = "";
-var cardswrap = document.getElementById("cardswrap");
+var cardswrap = document.getElementById("cards");
 
-// See: https://carto.com/location-data-services/basemaps/ CAN'T USE
+// See: https://carto.com/location-data-services/basemaps/
 var carto = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';
 var osm = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var cartoc = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>';
@@ -18,11 +18,13 @@ L.tileLayer(carto, {
 	attribution: cartoc
 }).addTo(map);
 
-omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0418.csv')
+// Grab data from CSV
+omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0419.csv')
 .on('ready', function(layer) {
 	
 	this.eachLayer(function(marker) {
 		
+		// Set variables for each loop --- Not very efficient...
 		var mID = marker.toGeoJSON().properties.cartodb_id;
 		var mStatus = marker.toGeoJSON().properties.status;
 		var mStatusLower = mStatus.toLowerCase();
@@ -31,6 +33,7 @@ omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0418.csv')
 		var mCity = marker.toGeoJSON().properties.location_c;
 		var mZip = marker.toGeoJSON().properties.location_z;
 		
+		// Adds a card to the cards empty string variable
 		addCard(mID,mStatusLower,mStatus,mName,mAddress,mCity,mZip);
 		
 		if (mStatus === 'Active') {
@@ -72,41 +75,31 @@ omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0418.csv')
 		}
 		
 		// Bind a popup to each icon based on the same properties
-		//marker.bindTooltip(mBName);
-		//console.log(mID);
+		//marker.bindTooltip(mName);
 		
+		// Go to proper card on click
 		marker.on('click', function(){
-			$('.flexy-item').css("background","none");
-			//console.log(marker);
-			//console.log(mID);
+			// Reset any other backgrounds
+			$('.card').css("background","none");
+			// Get destination ID
 			var dest = "#" + mID;
-			//window.location = dest;
+			// Go there
 			$('html, body').animate({
 				scrollTop: $(dest).offset().top - 50
-			}, 2000, function(){
-				$(dest).css("background","rgba(136,136,136,.2)");
+			}, 1500, function(){
+				$(dest).css("background","rgba(136,136,136,.3)");
 			});
 		});
 		
-		//marker.bindPopup(mBName + '<br>' + mAddress);
+		// Bind a pop up on click
+		//marker.bindPopup(mName + '<br>' + mAddress);
 	});
 	
 	// Assign cards
 	cardswrap.innerHTML = cards;
 	
-	$('<div class="flexy-ad">' +
-		'<!-- //////////////////// Leaderboard Top \\\\\\\\\\\\\\\\\\\\ -->' +
-		'<div class="advert"><div id="leaderboard-top"><script>googletag.cmd.push(function() { googletag.display("leaderboard-top"); });</script></div></div>' +
-		'<!-- \\\\\\\\\\\\\\\\\\\\ Leaderboard Top //////////////////// -->' +
-	'</div>')
-		.insertAfter($('div#13'));
-	$('<div class="flexy-ad">' +
-		'<!-- //////////////////// Medium Rectangle 1 \\\\\\\\\\\\\\\\\\\\ -->' +
-		'<div class="advert"><div id="medium-rectangle-1"><script>googletag.cmd.push(function() { googletag.display("medium-rectangle-1"); });</script></div></div>' +
-		'<!-- \\\\\\\\\\\\\\\\\\\\ Medium Rectangle 1 //////////////////// -->' +
-	'</div>')
-		.insertAfter($('div#19'));
-	//$("#cardswrap:nth-child(12)").css("background","red");
+	// Insert the ads AFTER the cards have been applied
+	placeAds();
 	
 })
 .addTo(map);

@@ -1,0 +1,25 @@
+// For back to top button, fixed on bottom right
+.totop-button {
+	margin: 10px;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+	
+	// Disappear at top, will appear on scroll
+	display: none;
+	
+	color: #fff;
+	opacity: .8;
+	
+	background-color: ccc(.8);
+	transition: background-color .5s ease;
+	
+	&:hover{
+		cursor: pointer;
+		
+		background-color: ccc(1);
+		transition: background-color .5s ease;
+	}
+}
