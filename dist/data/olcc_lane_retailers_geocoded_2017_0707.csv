@@ -1,0 +1,70 @@
+id,name,street,city,zip,county,address,lat,long,med,delivery
+000,Apothecaria,700 Row River Rd.,Cottage Grove,97424,Lane,"700 Row River Rd. Cottage Grove, OR 97424",43.8027148,-123.0394728,TRUE,FALSE
+001,Mandy's Sugar Shack,339 Highway 99 South,Cottage Grove,97424,Lane,"339 Highway 99 South Cottage Grove, OR 97424",43.7940619,-123.061711,TRUE,FALSE
+002,The Holistic Coop LLC,1049 E. Main St.,Cottage Grove,97424,Lane,"1049 E. Main St. Cottage Grove, OR 97424",43.7970169,-123.0569705,FALSE,FALSE
+003,The Medication Station,1041 Highway 99 North,Cottage Grove,97424,Lane,"1041 Highway 99 North Cottage Grove, OR 97424",43.8039364,-123.0577283,FALSE,TRUE
+004,The People's Wellness Center,71 Centennial Loop Suite B,Euegene,97401,Lane,"71 Centennial Loop Suite B Euegene, OR 97401",44.0606875,-123.0786996,TRUE,TRUE
+005,Amazon Organics,3443 Hilyard St. Suite F,Eugene,97405,Lane,"3443 Hilyard St. Suite F Eugene, OR 97405",44.0191221,-123.0810621,TRUE,TRUE
+006,Apothca,804 E. 12th Ave. ,Eugene,97401,Lane,"804 E. 12th Ave.  Eugene, OR 97401",44.0465021,-123.0799928,TRUE,TRUE
+007,Buds LLC,439 W 1st Ave.,Eugene,97401,Lane,"439 W 1st Ave. Eugene, OR 97401",44.0589131,-123.0993514,TRUE,TRUE
+008,Cannablaze ,86305 College View Rd.,Eugene,97405,Lane,"86305 College View Rd. Eugene, OR 97405",44.008298,-123.019876,TRUE,TRUE
+009,Cannabliss & Co. ,588 E. 11th Ave.,Eugene,97401,Lane,"588 E. 11th Ave. Eugene, OR 97401",44.047445,-123.083906,FALSE,TRUE
+010,Elev8 Cannabis,2055 W. 12th Ave.,Eugene,97402,Lane,"2055 W. 12th Ave. Eugene, OR 97402",44.0467137,-123.1241136,TRUE,TRUE
+011,Emerald City Medicinal ,1474 W. 6th Ave.  ,Eugene,97402,Lane,"1474 W. 6th Ave.   Eugene, OR 97402",44.0530344,-123.1150388,FALSE,FALSE
+012,Eugene Og,2045 Franklin Blvd. ,Eugene,97403,Lane,"2045 Franklin Blvd.  Eugene, OR 97403",44.045361,-123.062402,TRUE,TRUE
+013,Eugreen Health Center,1000 Obie St. Suite A ,Eugene,97402,Lane,"1000 Obie St. Suite A  Eugene, OR 97402",44.0491683,-123.1517414,FALSE,TRUE
+014,Eugreen Health Center,1111 Willamette St. ,Eugene,97401,Lane,"1111 Willamette St.  Eugene, OR 97401",44.0475561,-123.092495,TRUE,FALSE
+015,Flowr Of Lyfe,114 West Broadway ,Eugene,97401,Lane,"114 West Broadway  Eugene, OR 97401",44.0499256,-123.0947031,TRUE,FALSE
+016,Frequent Vibrationz,1409 Oak St. ,Eugene,97401,Lane,"1409 Oak St.  Eugene, OR 97401",44.0442351,-123.0909246,TRUE,TRUE
+017,Glassroots,980 W. 5th Ave.,Eugene,97402,Lane,"980 W. 5th Ave. Eugene, OR 97402",44.0541929,-123.1076954,TRUE,FALSE
+018,Grasslands Dispensary,154 Lawrence St.,Eugene,97401,Lane,"154 Lawrence St. Eugene, OR 97401",44.0581406,-123.0990459,FALSE,FALSE
+019,Green Health Associates ,607 Highway 99 North,Eugene,97402,Lane,"607 Highway 99 North Eugene, OR 97402",44.0532772,-123.1020068,TRUE,FALSE
+020,Hush ,1257 High St. Suite A,Eugene,97401,Lane,"1257 High St. Suite A Eugene, OR 97401",44.0459912,-123.0878571,FALSE,FALSE
+021,"Hwy 99 Cannabis, Co.",1083 B Highway 99 North,Eugene,97402,Lane,"1083 B Highway 99 North Eugene, OR 97402",44.0730925,-123.1454325,FALSE,FALSE
+022,Jamaica Joel's,37 W. 13th Ave. Suite 201 ,Eugene,97405,Lane,"37 W. 13th Ave. Suite 201  Eugene, OR 97405",44.0456901,-123.0930938,TRUE,TRUE
+023,La Mota ,1291 W. 7th Ave.,Eugene,97402,Lane,"1291 W. 7th Ave. Eugene, OR 97402",44.052355,-123.112292,TRUE,TRUE
+024,Mary Jane's Pot Shop,233 W. 7th Ave. Suite B,Eugene,97401,Lane,"233 W. 7th Ave. Suite B Eugene, OR 97401",44.0523405,-123.0961954,FALSE,FALSE
+025,Mary Jane's Pot Shop,3170 W. 11th Ave. Unit A,Eugene,97402,Lane,"3170 W. 11th Ave. Unit A Eugene, OR 97402",44.0475384,-123.1398409,FALSE,FALSE
+026,Mood,40 River Loop 2 Building 1 Suite B ,Eugene,97404,Lane,"40 River Loop 2 Building 1 Suite B  Eugene, OR 97404",44.1188045,-123.1373511,FALSE,FALSE
+027,Moss Crossing,2751 Friendly St. ,Eugene,97405,Lane,"2751 Friendly St.  Eugene, OR 97405",44.0284649,-123.1051672,TRUE,FALSE
+028,Nectar,340 River Rd.,Eugene,97404,Lane,"340 River Rd. Eugene, OR 97404",44.0658757,-123.1179957,FALSE,TRUE
+029,Nextlevel Wellness ,2837 Willamette St. Suite A ,Eugene,97405,Lane,"2837 Willamette St. Suite A  Eugene, OR 97405",44.0272745,-123.0904597,FALSE,FALSE
+030,Nodak Green Prairie,390 Coburg Rd. Suite A - 2,Eugene,97401,Lane,"390 Coburg Rd. Suite A - 2 Eugene, OR 97401",44.0668498,-123.0733207,TRUE,FALSE
+031,Oregon Medigreen,570 Lawrence St. #112 ,Eugene,97401,Lane,"570 Lawrence St. #112  Eugene, OR 97401",44.0536898,-123.0992985,FALSE,FALSE
+032,Oregon's Green Rush,2644 River Rd. #5 ,Eugene,97404,Lane,"2644 River Rd. #5  Eugene, OR 97404",44.1023879,-123.1313705,TRUE,FALSE
+033,Quick Stop Cannabis,1681 W. 7th  Ave.,Eugene,97402,Lane,"1681 W. 7th  Ave. Eugene, OR 97402",44.0524183,-123.1178897,TRUE,TRUE
+034,Rare Earth Organics LLC,2699 Roosevelt Blvd.,Eugene,97402,Lane,"2699 Roosevelt Blvd. Eugene, OR 97402",44.0645398,-123.1361455,FALSE,TRUE
+035,River Valley Remedies,1985 W 7th  Ave.,Eugene,97402,Lane,"1985 W 7th  Ave. Eugene, OR 97402",44.052449,-123.122301,FALSE,TRUE
+036,Serra Eugene,1201 W. 11th Ave.,Eugene,97402,Lane,"1201 W. 11th Ave. Eugene, OR 97402",44.0478915,-123.1112074,FALSE,FALSE
+037,Spacebuds,741 Lincoln St.,Eugene,97401,Lane,"741 Lincoln St. Eugene, OR 97401",44.0516672,-123.0970652,TRUE,TRUE
+038,Sproutly,2270 W. 11th Ave.,Eugene,97401,Lane,"2270 W. 11th Ave. Eugene, OR 97401",44.0475697,-123.1269858,FALSE,FALSE
+039,Star Leaf Cannabis,1279 W. 6th Ave.,Eugene,97402,Lane,"1279 W. 6th Ave. Eugene, OR 97402",44.053568,-123.11208,FALSE,FALSE
+040,Sweet Leaf Cannabis,943 Olive St.,Eugene,97401,Lane,"943 Olive St. Eugene, OR 97401",44.0494457,-123.0939479,TRUE,FALSE
+041,Sweet Tree Farms,4097 W. 11th Ave.,Eugene,97402,Lane,"4097 W. 11th Ave. Eugene, OR 97402",44.048589,-123.1618702,FALSE,FALSE
+042,Terpene Station,645 River Rd. Suite 3 ,Eugene,97404,Lane,"645 River Rd. Suite 3  Eugene, OR 97404",44.0718623,-123.1181102,TRUE,FALSE
+043,Terrapin Care Station,835 E. Park St. Suite 100,Eugene,97401,Lane,"835 E. Park St. Suite 100 Eugene, OR 97401",44.0507812,-123.0903692,FALSE,FALSE
+044,The Greener Side,1553 Oak St.,Eugene,97401,Lane,"1553 Oak St. Eugene, OR 97401",44.0427862,-123.0906639,FALSE,FALSE
+045,The Herbal Connection ,463 River Ave.,Eugene,97404,Lane,"463 River Ave. Eugene, OR 97404",44.0968785,-123.1181957,TRUE,FALSE
+046,TJ's On The Alley,1027 Willamette St.,Eugene,97401,Lane,"1027 Willamette St. Eugene, OR 97401",44.0484641,-123.092308,TRUE,TRUE
+047,TJ's Provisions,1910 Empire Park Dr.,Eugene,97402,Lane,"1910 Empire Park Dr. Eugene, OR 97402",44.0827515,-123.1540137,FALSE,FALSE
+048,Twenty After Four Wellness Center,420 Blair Blvd. Suite A ,Eugene,97402,Lane,"420 Blair Blvd. Suite A  Eugene, OR 97402",44.0550793,-123.109235,TRUE,TRUE
+049,Wildflower Pnw,1509 W. 6th Ave.,Eugene,97402,Lane,"1509 W. 6th Ave. Eugene, OR 97402",44.0534756,-123.1157854,FALSE,FALSE
+050,Buds 4 U,1480 Rhododendron Dr.,Florence,97439,Lane,"1480 Rhododendron Dr. Florence, OR 97439",43.9708543,-124.1049732,TRUE,TRUE
+051,Harvest Moon Cannabis,85289 Highway 101 ,Florence,97439,Lane,"85289 Highway 101  Florence, OR 97439",43.951079,-124.103885,TRUE,FALSE
+052,Premium Choice Marijuana,1770 Highway 126  ,Florence,97439,Lane,"1770 Highway 126   Florence, OR 97439",43.974203,-124.101698,TRUE,TRUE
+053,Buds 4 U,10692 Highway 126 Suite 4 ,Mapleton,97453,Lane,"10692 Highway 126 Suite 4  Mapleton, OR 97453",44.0252752,-123.857613,TRUE,FALSE
+054,Green Oaks,48122 Oregon 58 ,Oakridge,97463,Lane,"48122 Oregon 58  Oakridge, OR 97463",43.7433443,-122.4643472,FALSE,FALSE
+055,"Cannabis, LLC",1936 Main St.,Springfield,97477,Lane,"1936 Main St. Springfield, OR 97477",44.0462178,-122.996157,FALSE,FALSE
+056,Cannabliss & Co. ,2600 Main St. Suite E,Springfield,97477,Lane,"2600 Main St. Suite E Springfield, OR 97477",44.0461647,-122.9884609,FALSE,FALSE
+057,Deep Roots Cannabis,2155 Olympic St. ,Springfield,97477,Lane,"2155 Olympic St.  Springfield, OR 97477",44.0592624,-122.9934845,TRUE,FALSE
+058,Good Karma,3332 Main St.,Springfield,97478,Lane,"3332 Main St. Springfield, OR 97478",44.0461814,-122.9788109,TRUE,FALSE
+059,Grateful Meds,1401 Market St.,Springfield,97477,Lane,"1401 Market St. Springfield, OR 97477",44.0573636,-123.0028578,TRUE,FALSE
+060,Hi Cascade,1628 Main St.,Springfield,97477,Lane,"1628 Main St. Springfield, OR 97477",44.0461243,-123.0012031,TRUE,TRUE
+061,K9 Chronic Llc,1505 18th St. Suite Ab,Springfield,97477,Lane,"1505 18th St. Suite Ab Springfield, OR 97477",44.0587628,-122.997922,TRUE,TRUE
+062,Mid Valley Cannabis,3650 Main St.,Springfield,97478,Lane,"3650 Main St. Springfield, OR 97478",44.0461397,-122.9741124,FALSE,FALSE
+063,Mid Valley Cannabis,2147 Main St. ,Springfield,97477,Lane,"2147 Main St.  Springfield, OR 97477",44.045521,-122.9938044,FALSE,FALSE
+064,Phresh Start Llc,1623 21st St. Suite B ,Springfield,97477,Lane,"1623 21st St. Suite B  Springfield, OR 97477",44.0589087,-122.9938668,FALSE,FALSE
+065,Sweet Leaf Cannabis Llc.,3912 Main St.,Springfield,97478,Lane,"3912 Main St. Springfield, OR 97478",44.046116,-122.970092,FALSE,FALSE
+066,"Canna Royal, Inc",25808 Highway 126 Suite 1-B,Veneta,97487,Lane,"25808 Highway 126 Suite 1-B Veneta, OR 97487",44.0526989,-123.3170634,FALSE,FALSE
+067,Hi Cascade,25561 Highway 126 ,Veneta,97487,Lane,"25561 Highway 126  Veneta, OR 97487",44.0527123,-123.3327833,FALSE,TRUE
+068,Oregon's Herbal Remedies,88344 Territorial Rd.,Veneta,97487,Lane,"88344 Territorial Rd. Veneta, OR 97487",44.0554109,-123.3524477,TRUE,TRUE

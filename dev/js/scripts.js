@@ -27,11 +27,15 @@ $('.totop-button').click(function(){
 		$('.card').css("background","none");
 	});
 });
-function addCard(id,statusLower,status,name,address,city,zip){
+function addCard(id,status,statusLower,delivery,name,street,city,zip){
   cards += "<div id='" + id + "' class='card " + statusLower + "'>";
-    cards += "<h3 class='label'>" + status + "</h3>";
+    if (delivery == 'TRUE') {
+        cards += "<h3 class='label'>" + status + " (Delivery)</h3>";
+    } else {
+        cards += "<h3 class='label'>" + status + "</h3>";
+    }
     cards += "<h1 class='h5'>" + name + "</h1>";
-    cards += "<p>" + address + "<br>" + city +", OR " + zip + "</p>";
+    cards += "<p>" + street + "<br>" + city +", OR " + zip + "</p>";
   cards += "</div>";
   //console.log(cards);
 }
@@ -2448,41 +2452,40 @@ L.tileLayer(carto, {
 }).addTo(map);
 
 // Grab data from CSV
-omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0419.csv')
+omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0707.csv')
 .on('ready', function(layer) {
 	
 	this.eachLayer(function(marker) {
 		
 		// Set variables for each loop --- Not very efficient...
-		var mID = marker.toGeoJSON().properties.cartodb_id;
-		var mStatus = marker.toGeoJSON().properties.status;
-		var mStatusLower = mStatus.toLowerCase();
-		var mName = marker.toGeoJSON().properties.tradename;
-		var mAddress = marker.toGeoJSON().properties.address;
-		var mCity = marker.toGeoJSON().properties.location_c;
-		var mZip = marker.toGeoJSON().properties.location_z;
+		var mID = marker.toGeoJSON().properties.id;
+		var mMed = marker.toGeoJSON().properties.med;
+		var mDelivery = marker.toGeoJSON().properties.delivery;
+		var mName = marker.toGeoJSON().properties.name;
+		var mStreet = marker.toGeoJSON().properties.street;
+		var mCity = marker.toGeoJSON().properties.city;
+		var mZip = marker.toGeoJSON().properties.zip;
+		var mStatus;
+		var mStatusLower;
+		
+		if (mMed == 'TRUE'){
+			mStatusLower = 'med';
+			mStatus = 'Medical grade';
+		} else {
+			mStatusLower = 'active';
+			mStatus = 'Active';
+		}
+		
 		
 		// Adds a card to the cards empty string variable
-		addCard(mID,mStatusLower,mStatus,mName,mAddress,mCity,mZip);
+		addCard(mID,mStatus,mStatusLower,mDelivery,mName,mStreet,mCity,mZip);
 		
-		if (mStatus === 'Active') {
+		if (mStatusLower === 'med') {
 			marker.setIcon(
 				L.icon({
-					iconUrl: 'media/approved.png',
+					iconUrl: 'media/med.png',
 					shadowUrl: 'media/shadow.png',
-
-					iconSize:     [10,10], // size of the icon
-					shadowSize:   [10,10], // size of the shadow
-					iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
-					shadowAnchor: [-2,-2],  // the same for the shadow
-					popupAnchor:  [6,0] // point from which the popup should open relative to the iconAnchor
-				}));
-		} else if (mStatus === 'Dispensary') {
-			marker.setIcon(
-				L.icon({
-					iconUrl: 'media/dispensary.png',
-					shadowUrl: 'media/shadow.png',
-
+					
 					iconSize:     [10,10], // size of the icon
 					shadowSize:   [10,10], // size of the shadow
 					iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
@@ -2492,9 +2495,9 @@ omnivore.csv('data/olcc_lane_retailers_geocoded_2017_0419.csv')
 		} else {
 			marker.setIcon(
 				L.icon({
-					iconUrl: 'media/pending.png',
+					iconUrl: 'media/approved.png',
 					shadowUrl: 'media/shadow.png',
-
+					
 					iconSize:     [10,10], // size of the icon
 					shadowSize:   [10,10], // size of the shadow
 					iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location

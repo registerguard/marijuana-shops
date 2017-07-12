@@ -749,10 +749,7 @@
 .active .label {
   color: #638008; }
 
-.proposed .label {
-  color: #b38f00; }
-
-.dispensary .label {
+.med .label {
   color: #00517e; }
 
 footer {
